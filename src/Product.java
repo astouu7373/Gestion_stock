@@ -19,4 +19,5 @@ public class Product {
     public void SetPrix( double Prix){
         this.Prix = Prix;
     }
+
 }
