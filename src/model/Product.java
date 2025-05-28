@@ -19,7 +19,6 @@ public abstract class Product {
     public void setQuantité(int Quantité){
         this.quantité = quantité;
     }
-
     public double getPrix(){return prix;};
     public void SetPrix( double prix){
         this.prix = prix;
