@@ -1,17 +1,17 @@
 package model;
 
 public class ElectrocicProduct extends  Product{
-    private double garantie;
+    private int garantie;
 
-    ElectrocicProduct(String nom, int quantité, double prix, double garantie) {
-        super(nom, quantité, prix);
+    ElectrocicProduct(String nom, int quantité, double prix, double seuil, int garantie) {
+        super(nom, quantité, prix,seuil);
         this.garantie = garantie;
     }
 
-    public double getGarantie() {
+    public int getGarantie() {
         return garantie;
     }
-    public void setGarantie(double garantie){
+    public void setGarantie(int garantie){
         this.garantie = garantie;
     }
 }
