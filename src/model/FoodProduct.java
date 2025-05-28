@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class FoodProduct extends Product{
     private LocalDate date_peremption;
-    FoodProduct(String nom, int quantité, double prix, double seuil, LocalDate date_peremption){
+    FoodProduct(String nom, int quantité, double prix, int seuil, LocalDate date_peremption){
         super(nom, quantité, prix, seuil);
         this.date_peremption= date_peremption;
     }

@@ -5,10 +5,11 @@ public class Product {
     int quantité;
     double prix;
     int seuil ;
-    Product(String nom, int quantité, double prix){
+    Product(String nom, int quantité, double prix, int seuil){
         this.nom = nom;
         this.quantité = quantité;
         this.prix = prix;
+        this.seuil = seuil;
     }
     public String getNom() { return nom;};
     public void setNom(String nom){
