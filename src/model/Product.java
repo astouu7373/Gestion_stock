@@ -1,25 +1,33 @@
 package model;
 
-public abstract class Product {
-    protected String nom;
-    protected int quantité;
-    protected double prix;
+public class Product {
+    String nom;
+    int quantité;
+    double prix;
+    int seuil ;
     Product(String nom, int quantité, double prix){
         this.nom = nom;
         this.quantité = quantité;
         this.prix = prix;
     }
-    public String getNom() { return nom;};
+    public String getNom() { return Nom;};
     public void setNom(String Nom){
-        this.nom = Nom;
+        this.Nom = Nom;
     }
-    public int getQuantité(){return quantité;};
+    public int getQuantité(){return Quantité;};
     public void setQuantité(int Quantité){
-        this.quantité = Quantité;
+        this.Quantité = Quantité;
     }
-    public double getPrix(){return prix;};
+    public double getPrix(){return Prix;};
     public void SetPrix( double Prix){
-        this.prix = Prix;
+        this.Prix = Prix;
     }
 
+    public int getSeuil() {
+        return seuil;
+    }
+
+    public void setSeuil(int seuil) {
+        this.seuil = seuil;
+    }
 }
