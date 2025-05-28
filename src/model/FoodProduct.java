@@ -1,7 +1,6 @@
 package model;
 
 import java.time.LocalDate;
-
 public class FoodProduct extends Product{
     private LocalDate date_peremption;
     FoodProduct(String nom, int quantité, double prix, int seuil, LocalDate date_peremption){
