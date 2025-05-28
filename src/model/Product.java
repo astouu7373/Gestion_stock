@@ -10,17 +10,17 @@ public class Product {
         this.quantité = quantité;
         this.prix = prix;
     }
-    public String getNom() { return Nom;};
-    public void setNom(String Nom){
-        this.Nom = Nom;
+    public String getNom() { return nom;};
+    public void setNom(String nom){
+        this.nom = nom;
     }
-    public int getQuantité(){return Quantité;};
-    public void setQuantité(int Quantité){
-        this.Quantité = Quantité;
+    public int getQuantité(){return quantité;};
+    public void setQuantité(int quantité){
+        this.quantité = quantité;
     }
-    public double getPrix(){return Prix;};
-    public void SetPrix( double Prix){
-        this.Prix = Prix;
+    public double getPrix(){return prix;};
+    public void SetPrix( double prix){
+        this.prix = prix;
     }
 
     public int getSeuil() {
