@@ -16,6 +16,7 @@ public class InterfaceConsole {
          boolean continuer = true;
          while (continuer) {
              afficherMenu();
+
              int choix = demanderChoix();
              switch (choix) {
                  case 1:

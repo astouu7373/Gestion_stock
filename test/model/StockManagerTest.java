@@ -7,6 +7,7 @@ import java.time.LocalDate;
 
 import static model.Role.Admin;
 import static model.Role.Employee;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class StockManagerTest {

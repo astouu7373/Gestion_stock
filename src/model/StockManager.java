@@ -72,6 +72,7 @@ public class StockManager {
                 if (!p.equals(produit) && p.getNom().equalsIgnoreCase(newNom)) {
                     nomTrouve = true;
                 }
+
             }
 
             if ( p2 != null && !nomTrouve){
