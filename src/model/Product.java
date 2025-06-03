@@ -1,28 +1,32 @@
 package model;
 
-public class Product {
+public abstract class Product {
     String nom;
-    int quantité;
+    int quantite;
     double prix;
     int seuil ;
-    Product(String nom, int quantité, double prix, int seuil){
+    Product(String nom, int quantite, double prix, int seuil){
         this.nom = nom;
-        this.quantité = quantité;
+        this.quantite = quantite;
         this.prix = prix;
         this.seuil = seuil;
     }
-    public String getNom() { return nom;};
+    public String getNom() { 
+        return nom;
+    };
     public void setNom(String nom){
         this.nom = nom;
     }
-    public int getQuantité(){return quantité;};
-    public void setQuantité(int quantité){
-        this.quantité = quantité;
+    public int getQuantite(){
+        return quantite;
+    };
+    public void setQuantite(int quantite){
+        this.quantite = quantite;
     }
-    public double getPrix(){return prix;};
-    public void SetPrix( double prix){
-        this.prix = prix;
+    public double getPrix(){
+        return prix;
     }
+
 
     public int getSeuil() {
         return seuil;
@@ -30,5 +34,9 @@ public class Product {
 
     public void setSeuil(int seuil) {
         this.seuil = seuil;
+    }
+
+    public void setPrix(double prix) {
+        this.prix = prix;
     }
 }

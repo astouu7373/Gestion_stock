@@ -3,8 +3,8 @@ package model;
 public class ElectrocicProduct extends  Product{
     private double garantie;
 
-    ElectrocicProduct(String nom, int quantité, double prix, int seuil, double garantie) {
-        super(nom, quantité, prix, seuil);
+    ElectrocicProduct(String nom, int quantite, double prix, int seuil, double garantie) {
+        super(nom, quantite, prix, seuil);
         this.garantie = garantie;
     }
 
