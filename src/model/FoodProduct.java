@@ -15,4 +15,8 @@ public class FoodProduct extends Product{
     public void setDatePeremption(LocalDate datePeremption) {
         this.datePeremption = datePeremption;
     }
+    @Override
+    public String toString() {
+        return super.toString() + ", Date de péremption: " + datePeremption;
+    }
 }

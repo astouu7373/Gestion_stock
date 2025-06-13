@@ -27,20 +27,18 @@ public class StockManager {
         return true;
     }
 
-    public boolean supprimerProduit(String nom , User u ) {
+    public boolean supprimerUnProduit(String nom , User u ) {
         for (int i = 0; i < produits.size(); i++) {
-            if (produits.get(i).getNom().equalsIgnoreCase(nom) && u.getRole().equals(Role.Admin) ) {
+            if (produits.get(i).getNom().equalsIgnoreCase(nom) && u.getRole().equals("Admin") ) {
                 produits.remove(i);
-                return true; // Suppression réussie
+                return true; // le produit est supprimé
             }
         }
-        return false; // Produit non trouvé
+        return false; // le produit est introuvable
     }
 
 
-
-
-    public Product rechercherProduit(String nom){
+    public Product rechercherUnProduit(String nom){
         for (Product p : produits) {
             if (Objects.equals(p.getNom(), nom)) {
                 return p;
@@ -59,8 +57,8 @@ public class StockManager {
         return null ;
     }
 
-    public boolean modifierProduit(String nom, String newNom, double newPrix, int newQuantite, int newSeuil , LocalDate newDatePeremption , Integer newGarantie) {
-        Product produit = rechercherProduit(nom);
+    public boolean modifierUnProduit(String nom, String newNom, double newPrix, int newQuantite, int newSeuil , LocalDate newDatePeremption , Integer newGarantie) {
+        Product produit = rechercherUnProduit(nom);
          Product p2 = null ;
          boolean nomTrouve = false ;
 
@@ -72,7 +70,6 @@ public class StockManager {
                 if (!p.equals(produit) && p.getNom().equalsIgnoreCase(newNom)) {
                     nomTrouve = true;
                 }
-
             }
 
             if ( p2 != null && !nomTrouve){
@@ -85,12 +82,11 @@ public class StockManager {
                     ((FoodProduct) produit).setDatePeremption(newDatePeremption);
                 }
 
-                if (produit instanceof ElectrocicProduct && newGarantie != null) {
-                    ((ElectrocicProduct) produit).setGarantie(newGarantie);
+                if (produit instanceof ElectronicProduct && newGarantie != null) {
+                    ((ElectronicProduct) produit).setGarantie(newGarantie);
                 }
                 return true;
             }
-
         return false;
     }
 

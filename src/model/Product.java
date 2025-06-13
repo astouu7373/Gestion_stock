@@ -29,14 +29,22 @@ public abstract class Product {
 
 
     public int getSeuil() {
+
         return seuil;
     }
 
     public void setSeuil(int seuil) {
+
         this.seuil = seuil;
     }
 
     public void setPrix(double prix) {
+
         this.prix = prix;
     }
+    @Override
+    public String toString() {
+        return "Produit: " + nom + ", Prix: " + prix + ", Quantité: " + quantite + ", Seuil: " + seuil;
+    }
+
 }

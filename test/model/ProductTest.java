@@ -8,12 +8,12 @@ import static org.junit.jupiter.api.Assertions.*;
 public class ProductTest {
  @Test
 void testConstructeurElectrocic(){
-     Product product = new ElectrocicProduct("Chargeur", 20, 20, 3, 3);
+     Product product = new ElectronicProduct("Chargeur", 20, 20, 3, 3);
      assertEquals("Chargeur", product.getNom());
      assertEquals(20, product.getQuantite());
      assertEquals(20,product.getPrix());
      assertEquals(3, product.getSeuil());
-     assertEquals(3, ((ElectrocicProduct) product).getGarantie());
+     assertEquals(3, ((ElectronicProduct) product).getGarantie());
  }
 
 @Test
