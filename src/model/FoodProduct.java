@@ -20,3 +20,4 @@ public class FoodProduct extends Product{
         return super.toString() + ", Date de péremption: " + datePeremption;
     }
 }
+

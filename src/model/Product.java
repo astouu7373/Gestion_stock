@@ -13,13 +13,14 @@ public abstract class Product {
     }
     public String getNom() { 
         return nom;
-    };
+    }
+
     public void setNom(String nom){
         this.nom = nom;
     }
     public int getQuantite(){
         return quantite;
-    };
+    }
     public void setQuantite(int quantite){
         this.quantite = quantite;
     }
@@ -46,5 +47,4 @@ public abstract class Product {
     public String toString() {
         return "Produit: " + nom + ", Prix: " + prix + ", Quantité: " + quantite + ", Seuil: " + seuil;
     }
-
 }

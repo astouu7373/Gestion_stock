@@ -1,0 +1,5 @@
+nom, quantité, prix,seuil, garantie
+Chargeur,200,20.0,50,12.0
+IpadPro,50,990.0,40,48.0
+Ecouteur,20,15.0,60,3.0
+Carte STM32CUBE,26,30.0,30,6.0
